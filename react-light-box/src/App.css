@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body {
+  margin: auto;
+  padding: 0px;
+  overflow-x: hidden;
+  background-repeat: repeat;
+  font-family: 'Inter', sans-serif;
+  background-color: aquamarine;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.clearfix{
+	clear:both;
+}
+
+.App{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  padding-top: 77px;
+  margin: 0 auto;
+}
+
+.left-arrow {
+  left: 1rem;
+}
+.right-arrow {
+  right: 1rem;
+}
+.right-arrow, .left-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 47px;
+  height: 47px;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 23px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+}
+pre{
+  font-size: 20px;
+  color: black;
+}
+
+.image-thumbnail {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.image-thumbnail img{
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+}
+.image-card {
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
+  margin-bottom: 27px;
+}
+
+#lightbox {
+  z-index: 1007;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(3 169 244 / 91%);
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+}
+#lightbox-img {
+  height: 77vh;
+  max-width: 90%;
+  width: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.lightbox__view{
+  position: relative;
+}
+.lightbox__close {
+  color: #ffeb3b;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  text-align: right;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.arrow__left {
+  color: white;
+  border: 3px solid #ff5722;
+  background-color: #ff5722;
+  font-size: 24px;
+  padding: 7px 7px 7px 7px;
+  line-height: 20px;
+  position: absolute;
+  top: 37%;
+  margin-right: 17px;
+  left: 0;
+}
+.arrow__right{color: white;
+  border: 3px solid #ff5722;
+  background-color: #ff5722;
+  font-size: 24px;
+  padding: 7px 7px 7px 7px;
+  line-height: 20px;
+  position: absolute;
+  top: 37%;
+  margin-right: 17px;
+  right: 0;
+}
+.new__imgsss img{
+  max-height: 237px;
+  margin: 0 auto 23px;
+  display: block;
+  border-radius: 7px;
+}
+.new__imgsss__two img {
+  max-height: 327px;
+  margin: 0 auto 23px;
+  display: block;
+  border-radius: 7px;
+}
+
+@media(max-width:767px){
+  .banners img {height: auto;}
+  .banners h1 {top: 10%;font-size: 47px;max-width: 74%;margin: 0 auto;}
+  .right-arrow, .left-arrow {top: 13%;}
+
+}
