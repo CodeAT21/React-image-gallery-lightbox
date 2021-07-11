@@ -20,7 +20,7 @@ npm install -g nodemon
 
 ### Demo
 
-<a href="https://youtu.be/h_OQiXlNAIw" rel="nofollow"> Live Demo </a>
+<a href="https://youtu.be/_kG3Ns1ESVU" rel="nofollow"> Live Demo </a>
 
 ### Website
 <a href="https://codeat21.com/react-image-gallery-lightbox/" rel="nofollow"> Website </a>
